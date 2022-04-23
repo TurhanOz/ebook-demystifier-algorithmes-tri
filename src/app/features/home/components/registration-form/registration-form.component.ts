@@ -11,6 +11,7 @@ import { environment } from '@environments/environment';
 export class RegistrationFormComponent implements OnInit {
   submitted = false;
   registered = false;
+  submitting = false;
 
   profileForm = new FormGroup({
     firstName: new FormControl('', [Validators.required]),
@@ -38,6 +39,7 @@ export class RegistrationFormComponent implements OnInit {
   }
 
   postRegistration() {
+    this.submitting = true;
     let dto = {
       firstName: this.profileForm.value.firstName,
       book: 'demystifier-algorithmes-tri',
@@ -45,6 +47,7 @@ export class RegistrationFormComponent implements OnInit {
     }
     this.http.post<any>(environment.apiUrl+'registrations', dto).subscribe(data => {
       this.registered = true;
+      this.submitting = false;
       console.log(JSON.stringify(data));
     })
   }
