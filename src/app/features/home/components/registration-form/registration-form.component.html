@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="container-left">
+        <h1>Démystifier les algorithmes de tri</h1>
+        <p class="container-left-subtitle">Le premier ouvrage pour comprendre facilement l'univers des algorithmes de
+            tri.</p>
+        <p>Expert en ingénierie logicielle, Turhan OZ vous décrypte cet univers, avec des explications claires, des
+            schémas adaptés et des exemples de code source pour chacun des algorithmes démystifiés.</p>
+        <p>Grâce à cet ouvrage, vous aurez une base de connaissances solides pour être en mesure de résoudre des
+            problématiques réelles. </p>
+
+    </div>
+    <div class="container-right">
+        <h2>Recevez votre exemplaire gratuitement !</h2>
+        <p>Renseignez votre email pour recevoir votre exemplaire numérique intégral</p>
+
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <input type="text" name="firstname" class="input" id="form-firstname" placeholder="Prénom" maxlength="128"
+                required="" formControlName="firstName">
+
+           <div *ngIf="submitted && f['firstName'].errors?.['required']">
+                Veuillez saisir votre Prénom
+           </div>
+             <!-- 
+            <div *ngIf="f.firstName.errors?.['minlength']">
+                Name must be at least 4 characters long.
+            </div> -->
+            <input type="text" name="email" class="input" id="form-email" placeholder="Email" maxlength="128"
+                required="" formControlName="email">
+                <div *ngIf="submitted && f['email'].errors?.['email']">
+                    Veuillez saisir votre email
+               </div>
+            <button type="submit">Valider</button>
+        </form>
+        <p *ngIf="registered">Félicitations, votre exemplaire est dans votre boite mail. <br />Bonne lecture!</p>
+    </div>
+</div>

@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    // font-family: 'Ms Madi', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #F7F7F7;
+
+}
+
+h1 {
+    //font-family: 'Metrophobic', sans-serif !important;
+    //font-size:35px !important;
+    //font: 400 35px/35px 'Metrophobic', sans-serif !important;
+    font-size: 2.6em;
+    line-height: 1.125;
+    font-weight: 700;
+    color: rgb(84, 84, 84);
+    //font-family: 'Metrophobic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 1.9em;
+    line-height: 1.125;
+    font-weight: 700;
+    color: rgb(84, 84, 84);
+    //font-family: 'Metrophobic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Cardo', serif;
+    font-size: 1.2rem;
+    color: rgb(173, 173, 173);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Metrophobic&family=Ms+Madi&display=swap');

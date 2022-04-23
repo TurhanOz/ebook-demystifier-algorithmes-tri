@@ -24,7 +24,8 @@
     ],
     "paths": {
       "@shared/*": ["src/app/shared/*"],
-      "@features/*": ["src/app/features/*"]
+      "@features/*": ["src/app/features/*"],
+      "@environments/*":["src/environments/*"]
     }
   },
   "angularCompilerOptions": {
