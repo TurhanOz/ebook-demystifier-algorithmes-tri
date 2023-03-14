@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl:"https://h5sznbnph3.execute-api.eu-central-1.amazonaws.com/dp-toz-default-dev/"
+  apiUrl:"https://6svriv6ldi.execute-api.eu-central-1.amazonaws.com/dp2-toz-default-dev/"
 };
